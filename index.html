@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<htmL>
+
+<head>
+    <script>
+        function validdateform() {
+            var x = document.forms["myform"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            else document.write("Name submitted");
+
+        }
+    </script>
+</head>
+
+<body>
+    <form name="myform" onsubmit="validateForm()">
+        Name: <input type="text" name="fname">
+    age: <input type="text" age="fage">
+        <input type="submit" valid="Submit">
+        <p id="message"></p>
+    </form>
+</body>
+
+</htmL>
